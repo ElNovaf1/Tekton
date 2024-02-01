@@ -196,7 +196,7 @@ namespace Tekton.IntegrationTest
             EditProductDTO cInfoInserted = new EditProductDTO()
             {
                 ProductId = cOutputInfo.ProductId,
-                Name = "Edited",
+                Name = randomName + "Edited",
                 Description = cOutputInfo.Description,
                 StatusId = 1,
                 Price = cOutputInfo.Price,

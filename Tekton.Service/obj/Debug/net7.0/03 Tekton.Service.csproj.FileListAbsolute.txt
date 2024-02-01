@@ -1,0 +1,17 @@
+F:\Proyectos Dev\Tekton\Tekton.Service\bin\Debug\net7.0\03 Tekton.Service.deps.json
+F:\Proyectos Dev\Tekton\Tekton.Service\bin\Debug\net7.0\03 Tekton.Service.dll
+F:\Proyectos Dev\Tekton\Tekton.Service\bin\Debug\net7.0\03 Tekton.Service.pdb
+F:\Proyectos Dev\Tekton\Tekton.Service\bin\Debug\net7.0\01 Tekton.Domain.dll
+F:\Proyectos Dev\Tekton\Tekton.Service\bin\Debug\net7.0\02 Tekton.Infrastructure.dll
+F:\Proyectos Dev\Tekton\Tekton.Service\bin\Debug\net7.0\02 Tekton.Infrastructure.pdb
+F:\Proyectos Dev\Tekton\Tekton.Service\bin\Debug\net7.0\01 Tekton.Domain.pdb
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\03 Tekton.Service.csproj.AssemblyReference.cache
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\03 Tekton.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\03 Tekton.Service.AssemblyInfoInputs.cache
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\03 Tekton.Service.AssemblyInfo.cs
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\03 Tekton.Service.csproj.CoreCompileInputs.cache
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\03 Tekton.Service.csproj.CopyComplete
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\03 Tekton.Service.dll
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\refint\03 Tekton.Service.dll
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\03 Tekton.Service.pdb
+F:\Proyectos Dev\Tekton\Tekton.Service\obj\Debug\net7.0\ref\03 Tekton.Service.dll

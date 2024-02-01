@@ -1,0 +1,116 @@
+2024-01-31 17:14:37.645 -06:00 [INF] Now listening on: https://localhost:7238
+2024-01-31 17:14:37.663 -06:00 [INF] Now listening on: http://localhost:5109
+2024-01-31 17:14:37.665 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 17:14:37.666 -06:00 [INF] Hosting environment: Development
+2024-01-31 17:14:37.666 -06:00 [INF] Content root path: F:\Proyectos Dev\Tekton\Tekton.API
+2024-01-31 17:14:38.877 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2024-01-31 17:14:39.213 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 17:14:39.216 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 344.8700ms
+2024-01-31 17:14:39.223 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 9.5401ms
+2024-01-31 17:14:39.235 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2024-01-31 17:14:39.270 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.7306ms
+2024-01-31 17:14:39.760 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2024-01-31 17:14:39.911 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.9380ms
+2024-01-31 17:14:46.481 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/Products/api/Products/1 - -
+2024-01-31 17:14:46.487 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.GetById (Tekton.API)'
+2024-01-31 17:14:46.510 -06:00 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int64) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-01-31 17:14:46.840 -06:00 [INF] Executing action method Tekton.API.Controllers.ProductsController.GetById (Tekton.API) - Validation state: "Valid"
+2024-01-31 17:14:47.122 -06:00 [WRN] The property 'Id' on entity type 'Status' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-01-31 17:14:47.778 -06:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[id] = CAST(1 AS bigint)
+2024-01-31 17:14:47.868 -06:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[id], [s].[name]
+FROM [status] AS [s]
+WHERE [s].[id] = CAST(1 AS tinyint)
+2024-01-31 17:14:48.541 -06:00 [INF] Executed action method Tekton.API.Controllers.ProductsController.GetById (Tekton.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1697.1176ms.
+2024-01-31 17:14:48.546 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-01-31 17:14:48.580 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.GetById (Tekton.API) in 2066.7303ms
+2024-01-31 17:14:48.580 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.GetById (Tekton.API)'
+2024-01-31 17:14:48.588 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/Products/api/Products/1 - - - 200 175 application/json;+charset=utf-8 2107.6604ms
+2024-01-31 17:15:25.415 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7238/Products/api/Products application/json-patch+json 107
+2024-01-31 17:15:25.431 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.Insert (Tekton.API)'
+2024-01-31 17:15:25.438 -06:00 [INF] Route matched with {action = "Insert", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(Tekton.Service.DTO.NewProductDTO) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-01-31 17:15:25.479 -06:00 [INF] Executing action method Tekton.API.Controllers.ProductsController.Insert (Tekton.API) - Validation state: "Valid"
+2024-01-31 17:15:25.561 -06:00 [INF] Executed DbCommand (19ms) [Parameters=[@__entity_Name_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[name] = @__entity_Name_0
+2024-01-31 17:15:25.689 -06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 500) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Precision = 13) (Scale = 4) (DbType = Decimal), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Precision = 13) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [product] ([description], [name], [price], [idstatus], [stock])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-01-31 17:15:26.193 -06:00 [INF] Executed action method Tekton.API.Controllers.ProductsController.Insert (Tekton.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 713.238ms.
+2024-01-31 17:15:26.193 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-01-31 17:15:26.194 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.Insert (Tekton.API) in 756.688ms
+2024-01-31 17:15:26.194 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.Insert (Tekton.API)'
+2024-01-31 17:15:26.195 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7238/Products/api/Products application/json-patch+json 107 - 200 148 application/json;+charset=utf-8 779.9691ms
+2024-01-31 17:18:23.351 -06:00 [INF] Now listening on: https://localhost:7238
+2024-01-31 17:18:23.419 -06:00 [INF] Now listening on: http://localhost:5109
+2024-01-31 17:18:23.424 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 17:18:23.427 -06:00 [INF] Hosting environment: Development
+2024-01-31 17:18:23.428 -06:00 [INF] Content root path: F:\Proyectos Dev\Tekton\Tekton.API
+2024-01-31 17:18:24.142 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2024-01-31 17:18:24.571 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 17:18:24.574 -06:00 [INF] HTTP GET /swagger/index.html responded 200 in 356.0540 ms
+2024-01-31 17:18:24.579 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 7.2330ms
+2024-01-31 17:18:24.584 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 446.4179ms
+2024-01-31 17:18:24.593 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2024-01-31 17:18:24.619 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.7270ms
+2024-01-31 17:18:25.147 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2024-01-31 17:18:25.303 -06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 153.6712 ms
+2024-01-31 17:18:25.305 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.3752ms
+2024-01-31 17:18:30.858 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/Products/api/Products/1 - -
+2024-01-31 17:18:30.865 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.GetById (Tekton.API)'
+2024-01-31 17:18:30.891 -06:00 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int64) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-01-31 17:18:31.201 -06:00 [INF] Executing action method Tekton.API.Controllers.ProductsController.GetById (Tekton.API) - Validation state: "Valid"
+2024-01-31 17:18:31.487 -06:00 [WRN] The property 'Id' on entity type 'Status' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-01-31 17:18:32.105 -06:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[id] = CAST(1 AS bigint)
+2024-01-31 17:18:32.205 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[id], [s].[name]
+FROM [status] AS [s]
+WHERE [s].[id] = CAST(1 AS tinyint)
+2024-01-31 17:18:32.906 -06:00 [INF] Executed action method Tekton.API.Controllers.ProductsController.GetById (Tekton.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1700.0372ms.
+2024-01-31 17:18:32.915 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-01-31 17:18:32.947 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.GetById (Tekton.API) in 2049.9407ms
+2024-01-31 17:18:32.951 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.GetById (Tekton.API)'
+2024-01-31 17:18:32.952 -06:00 [INF] HTTP GET /Products/api/Products/1 responded 200 in 2090.8901 ms
+2024-01-31 17:18:32.961 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/Products/api/Products/1 - - - 200 175 application/json;+charset=utf-8 2102.9994ms
+2024-01-31 17:18:37.691 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/Products/api/Products/1 - -
+2024-01-31 17:18:37.694 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.GetById (Tekton.API)'
+2024-01-31 17:18:37.696 -06:00 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int64) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-01-31 17:18:37.724 -06:00 [INF] Executing action method Tekton.API.Controllers.ProductsController.GetById (Tekton.API) - Validation state: "Valid"
+2024-01-31 17:18:37.815 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[id] = CAST(1 AS bigint)
+2024-01-31 17:18:38.304 -06:00 [INF] Executed action method Tekton.API.Controllers.ProductsController.GetById (Tekton.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 577.4495ms.
+2024-01-31 17:18:38.308 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-01-31 17:18:38.311 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.GetById (Tekton.API) in 610.7164ms
+2024-01-31 17:18:38.313 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.GetById (Tekton.API)'
+2024-01-31 17:18:38.316 -06:00 [INF] HTTP GET /Products/api/Products/1 responded 200 in 622.4922 ms
+2024-01-31 17:18:38.320 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/Products/api/Products/1 - - - 200 175 application/json;+charset=utf-8 629.0736ms
+2024-01-31 20:34:44.920 -06:00 [INF] Now listening on: https://localhost:7238
+2024-01-31 20:34:44.947 -06:00 [INF] Now listening on: http://localhost:5109
+2024-01-31 20:34:44.950 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 20:34:44.951 -06:00 [INF] Hosting environment: Development
+2024-01-31 20:34:44.952 -06:00 [INF] Content root path: F:\Proyectos Dev\Tekton\Tekton.API
+2024-01-31 21:59:06.914 -06:00 [INF] Now listening on: https://localhost:7238
+2024-01-31 21:59:06.982 -06:00 [INF] Now listening on: http://localhost:5109
+2024-01-31 21:59:06.989 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 21:59:07.027 -06:00 [INF] Hosting environment: Development
+2024-01-31 21:59:07.040 -06:00 [INF] Content root path: F:\Proyectos Dev\Tekton\Tekton.API
+2024-01-31 21:59:08.824 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/index.html - -
+2024-01-31 21:59:09.197 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/index.html - - - 200 - text/html;charset=utf-8 376.1327ms
+2024-01-31 21:59:09.231 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 21:59:09.233 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/_vs/browserLink - -
+2024-01-31 21:59:09.261 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 29.3210ms
+2024-01-31 21:59:09.276 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.8704ms
+2024-01-31 21:59:09.799 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - -
+2024-01-31 21:59:09.956 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7238/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.0448ms

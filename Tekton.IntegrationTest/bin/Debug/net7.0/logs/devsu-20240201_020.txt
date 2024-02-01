@@ -1,0 +1,98 @@
+2024-02-01 15:32:11.541 -06:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 114
+2024-02-01 15:32:11.545 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.Update (Tekton.API)'
+2024-02-01 15:32:11.548 -06:00 [INF] Route matched with {action = "Update", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Tekton.Service.DTO.EditProductDTO) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-02-01 15:32:11.599 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[id], [s].[name]
+FROM [status] AS [s]
+WHERE [s].[id] = CAST(1 AS tinyint)
+2024-02-01 15:32:11.601 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[id] = CAST(0 AS bigint)
+2024-02-01 15:32:11.601 -06:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-02-01 15:32:11.601 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.Update (Tekton.API) in 53.6033ms
+2024-02-01 15:32:11.601 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.Update (Tekton.API)'
+2024-02-01 15:32:11.601 -06:00 [INF] HTTP PUT /Products/api/Products/ responded 404 in 55.9452 ms
+2024-02-01 15:32:11.602 -06:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 114 - 404 - text/plain;+charset=utf-8 60.8529ms
+2024-02-01 15:32:33.880 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 90
+2024-02-01 15:32:33.931 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.Insert (Tekton.API)'
+2024-02-01 15:32:33.948 -06:00 [INF] Route matched with {action = "Insert", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(Tekton.Service.DTO.NewProductDTO) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-02-01 15:32:34.391 -06:00 [WRN] The property 'Id' on entity type 'Status' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-02-01 15:32:34.833 -06:00 [INF] Executed DbCommand (30ms) [Parameters=[@__entity_Name_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[name] = @__entity_Name_0
+2024-02-01 15:32:34.868 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[id], [s].[name]
+FROM [status] AS [s]
+WHERE [s].[id] = CAST(1 AS tinyint)
+2024-02-01 15:32:35.018 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 500) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Precision = 13) (Scale = 4) (DbType = Decimal), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Precision = 13) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [product] ([description], [name], [price], [idstatus], [stock])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-01 15:32:35.496 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-02-01 15:32:35.511 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.Insert (Tekton.API) in 1559.981ms
+2024-02-01 15:32:35.512 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.Insert (Tekton.API)'
+2024-02-01 15:32:35.514 -06:00 [INF] HTTP POST /Products/api/Products/ responded 200 in 1588.3562 ms
+2024-02-01 15:32:35.521 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 90 - 200 149 application/json;+charset=utf-8 1645.1337ms
+2024-02-01 15:32:35.524 -06:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 91
+2024-02-01 15:32:35.525 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.Update (Tekton.API)'
+2024-02-01 15:32:35.529 -06:00 [INF] Route matched with {action = "Update", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Tekton.Service.DTO.EditProductDTO) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-02-01 15:32:35.591 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[id] = CAST(36 AS bigint)
+2024-02-01 15:32:35.605 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int64), @p0='?' (Size = 500) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Precision = 13) (Scale = 4) (DbType = Decimal), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Precision = 13) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [product] SET [description] = @p0, [name] = @p1, [price] = @p2, [idstatus] = @p3, [stock] = @p4
+OUTPUT 1
+WHERE [id] = @p5;
+2024-02-01 15:32:35.927 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-02-01 15:32:35.928 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.Update (Tekton.API) in 398.742ms
+2024-02-01 15:32:35.928 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.Update (Tekton.API)'
+2024-02-01 15:32:35.928 -06:00 [INF] HTTP PUT /Products/api/Products/ responded 200 in 402.9912 ms
+2024-02-01 15:32:35.929 -06:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 91 - 200 135 application/json;+charset=utf-8 404.8425ms
+2024-02-01 15:37:43.508 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 96
+2024-02-01 15:37:43.566 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.Insert (Tekton.API)'
+2024-02-01 15:37:43.586 -06:00 [INF] Route matched with {action = "Insert", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(Tekton.Service.DTO.NewProductDTO) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-02-01 15:37:44.026 -06:00 [WRN] The property 'Id' on entity type 'Status' is of type 'byte', but is set up to use a SQL Server identity column; this requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+2024-02-01 15:37:44.460 -06:00 [INF] Executed DbCommand (30ms) [Parameters=[@__entity_Name_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[name] = @__entity_Name_0
+2024-02-01 15:37:44.496 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[id], [s].[name]
+FROM [status] AS [s]
+WHERE [s].[id] = CAST(1 AS tinyint)
+2024-02-01 15:37:44.650 -06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 500) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Precision = 13) (Scale = 4) (DbType = Decimal), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Precision = 13) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [product] ([description], [name], [price], [idstatus], [stock])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-01 15:37:45.124 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-02-01 15:37:45.141 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.Insert (Tekton.API) in 1551.4709ms
+2024-02-01 15:37:45.142 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.Insert (Tekton.API)'
+2024-02-01 15:37:45.144 -06:00 [INF] HTTP POST /Products/api/Products/ responded 200 in 1583.6295 ms
+2024-02-01 15:37:45.152 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 96 - 200 155 application/json;+charset=utf-8 1647.2858ms
+2024-02-01 15:37:45.152 -06:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7238/Products/api/Products/37 - -
+2024-02-01 15:37:45.153 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.Delete (Tekton.API)'
+2024-02-01 15:37:45.157 -06:00 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int64) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-02-01 15:37:45.205 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[id] = CAST(37 AS bigint)
+2024-02-01 15:37:45.220 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [product]
+OUTPUT 1
+WHERE [id] = @p0;
+2024-02-01 15:37:45.544 -06:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-02-01 15:37:45.545 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.Delete (Tekton.API) in 388.2903ms
+2024-02-01 15:37:45.545 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.Delete (Tekton.API)'
+2024-02-01 15:37:45.545 -06:00 [INF] HTTP DELETE /Products/api/Products/37 responded 200 in 392.2010 ms
+2024-02-01 15:37:45.546 -06:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7238/Products/api/Products/37 - - - 200 - text/plain;+charset=utf-8 393.7662ms

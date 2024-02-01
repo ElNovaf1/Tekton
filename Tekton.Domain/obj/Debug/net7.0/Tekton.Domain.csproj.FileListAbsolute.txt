@@ -1,0 +1,14 @@
+F:\Proyectos Dev\Tekton\Tekton.Domain\bin\Debug\net7.0\Tekton.Domain.deps.json
+F:\Proyectos Dev\Tekton\Tekton.Domain\bin\Debug\net7.0\Tekton.Domain.runtimeconfig.json
+F:\Proyectos Dev\Tekton\Tekton.Domain\bin\Debug\net7.0\Tekton.Domain.dll
+F:\Proyectos Dev\Tekton\Tekton.Domain\bin\Debug\net7.0\Tekton.Domain.pdb
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\Tekton.Domain.csproj.AssemblyReference.cache
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\Tekton.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\Tekton.Domain.AssemblyInfoInputs.cache
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\Tekton.Domain.AssemblyInfo.cs
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\Tekton.Domain.csproj.CoreCompileInputs.cache
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\Tekton.Domain.dll
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\refint\Tekton.Domain.dll
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\Tekton.Domain.pdb
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\Tekton.Domain.genruntimeconfig.cache
+F:\Proyectos Dev\Tekton\Tekton.Domain\obj\Debug\net7.0\ref\Tekton.Domain.dll

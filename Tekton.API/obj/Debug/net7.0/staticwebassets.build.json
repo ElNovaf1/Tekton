@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lxZ/WMUGskdgZAjkSGFwGx1CxzlR4IUs16Ac3/7mVoA=",
+  "Source": "Tekton.API",
+  "BasePath": "_content/Tekton.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

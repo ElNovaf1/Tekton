@@ -1,0 +1,15 @@
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\bin\Debug\net7.0\02 Tekton.Infrastructure.deps.json
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\bin\Debug\net7.0\02 Tekton.Infrastructure.dll
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\bin\Debug\net7.0\02 Tekton.Infrastructure.pdb
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\bin\Debug\net7.0\01 Tekton.Domain.dll
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\bin\Debug\net7.0\01 Tekton.Domain.pdb
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\02 Tekton.Infrastructure.csproj.AssemblyReference.cache
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\02 Tekton.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\02 Tekton.Infrastructure.AssemblyInfoInputs.cache
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\02 Tekton.Infrastructure.AssemblyInfo.cs
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\02 Tekton.Infrastructure.csproj.CoreCompileInputs.cache
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\02 Tekton.Infrastructure.csproj.CopyComplete
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\02 Tekton.Infrastructure.dll
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\refint\02 Tekton.Infrastructure.dll
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\02 Tekton.Infrastructure.pdb
+F:\Proyectos Dev\Tekton\Tekton.Infrastructure\obj\Debug\net7.0\ref\02 Tekton.Infrastructure.dll

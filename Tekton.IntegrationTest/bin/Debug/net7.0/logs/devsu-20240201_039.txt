@@ -1,0 +1,40 @@
+2024-02-01 15:42:08.948 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 85
+2024-02-01 15:42:08.953 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.Insert (Tekton.API)'
+2024-02-01 15:42:08.955 -06:00 [INF] Route matched with {action = "Insert", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Insert(Tekton.Service.DTO.NewProductDTO) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-02-01 15:42:08.988 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__entity_Name_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[name] = @__entity_Name_0
+2024-02-01 15:42:08.989 -06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[id], [s].[name]
+FROM [status] AS [s]
+WHERE [s].[id] = CAST(1 AS tinyint)
+2024-02-01 15:42:08.992 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 500) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Precision = 13) (Scale = 4) (DbType = Decimal), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Precision = 13) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [product] ([description], [name], [price], [idstatus], [stock])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-01 15:42:09.313 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-02-01 15:42:09.314 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.Insert (Tekton.API) in 358.1647ms
+2024-02-01 15:42:09.314 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.Insert (Tekton.API)'
+2024-02-01 15:42:09.314 -06:00 [INF] HTTP POST /Products/api/Products/ responded 200 in 360.5755 ms
+2024-02-01 15:42:09.314 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 85 - 200 145 application/json;+charset=utf-8 365.9693ms
+2024-02-01 15:42:09.314 -06:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 91
+2024-02-01 15:42:09.314 -06:00 [INF] Executing endpoint 'Tekton.API.Controllers.ProductsController.Update (Tekton.API)'
+2024-02-01 15:42:09.316 -06:00 [INF] Route matched with {action = "Update", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Tekton.Service.DTO.EditProductDTO) on controller Tekton.API.Controllers.ProductsController (Tekton.API).
+2024-02-01 15:42:09.321 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[id], [p].[description], [p].[name], [p].[price], [p].[idstatus], [p].[stock]
+FROM [product] AS [p]
+WHERE [p].[id] = CAST(44 AS bigint)
+2024-02-01 15:42:09.328 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int64), @p0='?' (Size = 500) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Precision = 13) (Scale = 4) (DbType = Decimal), @p3='?' (Size = 1) (DbType = Byte), @p4='?' (Precision = 13) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [product] SET [description] = @p0, [name] = @p1, [price] = @p2, [idstatus] = @p3, [stock] = @p4
+OUTPUT 1
+WHERE [id] = @p5;
+2024-02-01 15:42:09.650 -06:00 [INF] Executing OkObjectResult, writing value of type 'Tekton.Service.DTO.ProductDTO'.
+2024-02-01 15:42:09.651 -06:00 [INF] Executed action Tekton.API.Controllers.ProductsController.Update (Tekton.API) in 334.3468ms
+2024-02-01 15:42:09.651 -06:00 [INF] Executed endpoint 'Tekton.API.Controllers.ProductsController.Update (Tekton.API)'
+2024-02-01 15:42:09.651 -06:00 [INF] HTTP PUT /Products/api/Products/ responded 200 in 336.6420 ms
+2024-02-01 15:42:09.651 -06:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7238/Products/api/Products/ application/json;+charset=utf-8 91 - 200 136 application/json;+charset=utf-8 336.8453ms

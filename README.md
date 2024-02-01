@@ -47,6 +47,8 @@ A continuación detallo listado de patrones de desarrollo utilizados en el proye
 -**Patrón Unit of Work** : Utilizado para abstraer la lógica de agrupación de "Transacciones" de forma que se pueda realizar un solo commit de las mismas a nuestro repositorio de datos o bien realizar Rollbacks.\
 -**Patrón Decorator** : Utilizamos un Decorator para extender la funcionalidad de nuestro repositorio genérico de forma que si lo deseamos podamos guardar y recuperar registros de nuestra base de datos en cache.\
 ## Comentarios
-Me tomé la libertad de adaptar algunos de los requerimientos del ejercicio, específicamente el requerimiento de guardar un diccionario de datos en cache para la entidad "Status": Ya que decidí implementar un repositorio genérico me pareció mas adecuado extender la funcionalidad del mismo mediante decorator para guardar y recuperar de cache los registros de cualquier entidad que utilice el repositorio genérico.
+Me tomé la libertad de adaptar algunos de los requerimientos del ejercicio, específicamente el requerimiento de guardar un diccionario de datos en cache para la entidad "Status": Ya que decidí implementar un repositorio genérico me pareció mas adecuado extender la funcionalidad del mismo mediante decorator para guardar y recuperar de cache los registros de cualquier entidad que utilice el repositorio genérico.\
+
+Puedes encontrar los logs de request dentro de la carpeta logs en el proyecto Tekton.API\
 
 Gracias por la oportunidad de participar de este proceso.

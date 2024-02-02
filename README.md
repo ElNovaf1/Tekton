@@ -49,6 +49,8 @@ A continuación detallo listado de patrones de desarrollo utilizados en el proye
 ## Comentarios
 Me tomé la libertad de adaptar algunos de los requerimientos del ejercicio, específicamente el requerimiento de guardar un diccionario de datos en cache para la entidad "Status": Ya que decidí implementar un repositorio genérico me pareció mas adecuado extender la funcionalidad del mismo mediante decorator para guardar y recuperar de cache los registros de cualquier entidad que utilice el repositorio genérico.\
 
+Adicional a lo solicitado agregue un par de metodos adicionales (GetAll y Delete).
+
 Puedes encontrar los logs de request dentro de la carpeta logs en el proyecto Tekton.API\
 
 Gracias por la oportunidad de participar de este proceso.

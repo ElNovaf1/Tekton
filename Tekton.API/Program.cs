@@ -14,7 +14,7 @@ builder.Logging.ClearProviders();
 var logger = new LoggerConfiguration()
     //.MinimumLevel.Override("Microsoft", LogEventLevel.Information)
     //.MinimumLevel.Override("System", LogEventLevel.Information)
-    .WriteTo.File("logs/devsu-.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.File("logs/tekton-.txt", rollingInterval: RollingInterval.Day)
     .WriteTo.Console()
     .CreateLogger();
 builder.Logging.AddSerilog(logger);
